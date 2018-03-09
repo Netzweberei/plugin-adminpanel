@@ -35,7 +35,7 @@
                 </tr>
             {% elseif menuItem.isStaticPage %}
                 <tr>
-                    <td class="icon"><a href="/{{ menuItem.route }}" title="View in frontend"><i class="fa fa-file-o fa-lg"></i></a></td>
+                    <td class="icon"><a href="/{{ menuItem.route }}" title="View '{{ menuItem.route }}' in frontend"><i class="fa fa-file-o fa-lg"></i></a></td>
                     <td class="title">{% if menuItem.title is empty %}[Kein Titel] {% else %}{{ menuItem.title }}{% endif %}</td>
                     <td class="links nowrap">
                         <a class="pure-button button-small" href="?action=page/data&path={{ menuItem.path }}&cancel={{ cancel }}">Eigenschaften</a>
